@@ -1,0 +1,27 @@
+{
+  "name": "elaborate",
+  "version": "0.1.0",
+  "description": "Highly configurable string and data formatting.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twcrews/elaborate.git"
+  },
+  "keywords": [
+    "string",
+    "strings",
+    "text",
+    "data",
+    "format",
+    "formatting"
+  ],
+  "author": "Crews Development",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twcrews/elaborate/issues"
+  },
+  "homepage": "https://github.com/twcrews/elaborate#readme"
+}
