@@ -2,7 +2,7 @@
   "name": "elaborate",
   "version": "0.1.0",
   "description": "Highly configurable string and data formatting.",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "jest"
   },
