@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "Highly configurable string and data formatting.",
   "main": "src/index.ts",
+  "jest": {
+    "verbose": true
+  },
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "repository": {
@@ -23,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/twcrews/elaborate/issues"
   },
-  "homepage": "https://github.com/twcrews/elaborate#readme"
+  "homepage": "https://github.com/twcrews/elaborate#readme",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "typescript": "^4.5.5"
+  }
 }
