@@ -2,13 +2,15 @@
   "name": "elaborate",
   "version": "0.2.0",
   "description": "Highly configurable string and data formatting.",
-  "main": "index.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "jest": {
     "verbose": true
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
