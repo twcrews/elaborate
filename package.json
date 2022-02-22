@@ -2,8 +2,8 @@
   "name": "elaborate",
   "version": "0.2.0",
   "description": "Highly configurable string and data formatting.",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "jest": {
     "verbose": true
   },
