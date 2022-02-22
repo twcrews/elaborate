@@ -1,3 +1,3 @@
 const testMessage = () => "test message";
 
-module.exports = testMessage;
+module.exports = { testMessage };
