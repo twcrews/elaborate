@@ -1,5 +1,5 @@
-const index = require("./index");
+import { testMessage } from "./index";
 
 test("Checks for test message", () => {
-	expect(index.testMessage()).toBe("test message");
+	expect(testMessage()).toBe("test message");
 });
