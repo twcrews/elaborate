@@ -1,13 +1,9 @@
 {
   "name": "elaborate",
   "version": "0.4.0",
-  "type": "module",
   "description": "Highly configurable string and data formatting.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "jest": {
-    "verbose": true
-  },
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -32,7 +28,7 @@
   },
   "homepage": "https://github.com/twcrews/elaborate#readme",
   "devDependencies": {
-    "@types/jest": "^27.4.0",
+    "@types/jest": "^27.4.1",
     "jest": "^27.5.1",
     "ts-jest": "^27.1.3",
     "typescript": "^4.5.5"
