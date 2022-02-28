@@ -1,1 +1,1 @@
-export const testMessage = () => "test message";
+export * from "./date";
