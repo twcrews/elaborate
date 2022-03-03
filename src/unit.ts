@@ -1,8 +1,17 @@
 const pluralize = require("pluralize");
+const numberToWords = require("number-to-words");
 
-export const unitString = (baseUnit: string, value: number): string => {
-	if (value === 1 || value === -1) {
-		return baseUnit;
+export const unitToLocaleString = (value: number, baseUnit?: string): string =>
+	value.toLocaleString() +
+	(baseUnit ? ` ${smartPluralize(value, baseUnit)}` : "");
+
+export const unitToWords = (value: number, baseUnit?: string): string => {
+	const numberWords = numberToWords.toWords(value);
+	if (baseUnit) {
+		return `${numberWords} ${smartPluralize(value, baseUnit)}`;
 	}
-	return pluralize(baseUnit);
+	return numberWords;
 };
+
+export const smartPluralize = (value: number, baseUnit: string): string =>
+	value === 1 || value === -1 ? baseUnit : pluralize(baseUnit);

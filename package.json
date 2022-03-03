@@ -36,6 +36,7 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
+    "number-to-words": "^1.2.4",
     "pluralize": "^8.0.0"
   }
 }

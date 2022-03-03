@@ -1,25 +1,27 @@
-import { unitString } from "../src/unit";
+import { unitToLocaleString, smartPluralize, unitToWords } from "../src/unit";
 
-test("unitString - correctly preserves singular units", () => {
-	expect(unitString("hour", 1)).toBe("hour");
+test("smartPluralize - pluralizes non-single value", () => {
+	expect(smartPluralize(2, "day")).toBe("days");
 });
 
-test("unitString - correctly pluralizes decimals under 1", () => {
-	expect(unitString("hour", 0.5)).toBe("hours");
+test("smartPluralize - ignores 1", () => {
+	expect(smartPluralize(1, "day")).toBe("day");
 });
 
-test("unitString - correctly pluralizes decimals over 1", () => {
-	expect(unitString("hour", 1.5)).toBe("hours");
+test("unitToLocaleString - localizes large numbers", () => {
+	expect(unitToLocaleString(1234, "hour")).toBe("1,234 hours");
 });
 
-test("unitString - correctly pluralizes zero", () => {
-	expect(unitString("hour", 0)).toBe("hours");
+test("unitToLocaleString - handles lack of unit", () => {
+	expect(unitToLocaleString(1234)).toBe("1,234");
 });
 
-test("unitString - correctly preserves singular negative 1", () => {
-	expect(unitString("hour", -1)).toBe("hour");
+test("unitToWords - handles large numbers correctly", () => {
+	expect(unitToWords(1234, "hour")).toBe(
+		"one thousand, two hundred thirty-four hours"
+	);
 });
 
-test("unitString - correctly pluralizes negatives != 1", () => {
-	expect(unitString("hour", -2)).toBe("hours");
+test("unitToWords - handles negative numbers correctly", () => {
+	expect(unitToWords(-1, "hour")).toBe("minus one hour");
 });
