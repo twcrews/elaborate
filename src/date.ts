@@ -1,6 +1,8 @@
 import { unitToLocaleString } from "./unit";
+import { friendlyList } from "./enum";
 
-//export const timespanToLocaleString = (timespan: number): string =>
+export const friendlyTimespanString = (timespan: number): string =>
+	friendlyList(friendlyTimespanArray(timespan));
 
 export const friendlyTimespanArray = (timespan: number): string[] => {
 	if (timespan <= 0) {
