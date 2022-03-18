@@ -46,16 +46,14 @@
        height="135.46666"
        x="3.5603841e-06"
        y="3.5603841e-06" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:141.111px;line-height:1.25;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy';stroke-width:0.264583"
-       x="23.705011"
-       y="105.14704"
-       id="text6306"><tspan
-         sodipodi:role="line"
-         id="tspan6304"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:141.111px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy';fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-         x="23.705011"
-         y="105.14704">e</tspan></text>
+    <g
+       aria-label="e"
+       id="text6306"
+       style="font-size:141.111px;line-height:1.25;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy';stroke-width:0.264583">
+      <path
+         d="m 97.912306,86.336836 -1.033528,5.305442 q -21.910789,15.227312 -37.344804,15.227312 -9.784063,0 -15.916327,-6.82129 -6.063363,-6.890181 -6.063363,-17.776673 0,-19.430323 14.8828,-36.517982 14.8828,-17.156561 31.763753,-17.156561 6.132265,0 9.921867,4.134111 3.789602,4.134111 3.789602,10.748689 0,13.229156 -13.504763,22.737611 -13.504763,9.508456 -32.246067,9.508456 l -0.0689,3.100583 q 0,20.119341 14.744997,20.119341 12.746842,0 31.074735,-12.609039 z M 52.29928,71.454036 q 15.434015,-1.240234 24.115648,-7.923713 8.681633,-6.752382 8.681633,-17.432169 0,-10.541983 -7.648105,-10.541983 -8.268222,0 -15.98523,11.024296 -7.717007,10.955395 -9.163946,24.873569 z"
+         style="fill:#ffffff"
+         id="path1362" />
+    </g>
   </g>
 </svg>
